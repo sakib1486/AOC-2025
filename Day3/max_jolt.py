@@ -1,6 +1,5 @@
-def part2(input):
+def count_max_jolt(input: list, k: int) -> int:
   jolt = 0
-  k = 12
   for i in input:
     i = i.strip('\n').strip()
     s = len(i)

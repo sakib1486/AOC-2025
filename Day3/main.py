@@ -1,5 +1,4 @@
-from part1 import part1
-from part2 import part2
+from max_jolt import count_max_jolt
 
 def main():
     fp = open('input.txt', 'r')
@@ -7,8 +6,8 @@ def main():
 
     # --- Add further manipulations --- #
     
-    p1_ans = part1(input)
-    p2_ans = part2(input)
+    p1_ans = count_max_jolt(input=input, k=2)
+    p2_ans = count_max_jolt(input=input, k=12)
 
     print(f"Part 1 answer: {p1_ans}")
     print(f"Part 2 answer: {p2_ans}")
